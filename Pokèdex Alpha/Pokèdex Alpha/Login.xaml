@@ -8,11 +8,11 @@
         mc:Ignorable="d"
         Title="Login" Height="300" Width="300">
     <Grid>
-        <TextBox x:Name="textBox" HorizontalAlignment="Center" Height="23" Margin="0,63,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Center" Height="23" Margin="0,100,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button" Content="Login" HorizontalAlignment="Center" Margin="0,142,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label x:Name="label_Copy" Content="No account yet? Register now!" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Width="176" Margin="0,181,0,0"/>
-        <Button x:Name="button_Copy" Content="Register" HorizontalAlignment="Center" Margin="0,225,0,0" VerticalAlignment="Top" Width="76" Click="button_Copy_Click"/>
+        <TextBox x:Name="TxtUsrLog" HorizontalAlignment="Center" Height="23" Margin="0,63,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TxtPswdLog" HorizontalAlignment="Center" Height="23" Margin="0,100,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnLog" Content="Login" HorizontalAlignment="Center" Margin="0,142,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="LblReg" Content="No account yet? Register now!" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" Width="176" Margin="0,181,0,0"/>
+        <Button x:Name="BtnReg" Content="Register" HorizontalAlignment="Center" Margin="0,225,0,0" VerticalAlignment="Top" Width="76" Click="button_Copy_Click"/>
         <Grid.Background>
             <ImageBrush ImageSource="Assets/Pokeball.png"/>
         </Grid.Background>
