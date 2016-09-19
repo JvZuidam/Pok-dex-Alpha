@@ -11,11 +11,11 @@
         <Grid.Background>
             <ImageBrush ImageSource="Assets/Pokeball.png"/>
         </Grid.Background>
+        <TextBox x:Name="TxtNm" HorizontalAlignment="Center" Height="23" Margin="0,42,0,0" TextWrapping="NoWrap" Text="Name" VerticalAlignment="Top" Width="140"/>
+        <TextBox x:Name="TxtUsrNm" HorizontalAlignment="Center" Height="23" Margin="0,75,0,0" TextWrapping="NoWrap" Text="Username" VerticalAlignment="Top" Width="140"/>
+        <PasswordBox x:Name="TxtPswd" HorizontalAlignment="Center" Height="23" Margin="0,108,0,0" Password="Password" VerticalAlignment="Top" Width="140"/>
+        <PasswordBox x:Name="TxtPswdRpt" HorizontalAlignment="Center" Height="23" Margin="0,141,0,0"  Password="Repeat password" VerticalAlignment="Top" Width="140"/>
+        <TextBox x:Name="TxtEml" HorizontalAlignment="Center" Height="23" Margin="0,174,0,0" TextWrapping="NoWrap" Text="Email" VerticalAlignment="Top" Width="140"/>
         <Button x:Name="BtnSub" Content="Submit" HorizontalAlignment="Center" Margin="0,225,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <TextBox x:Name="TxtNm" HorizontalAlignment="Center" Height="23" Margin="0,42,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="TxtUsrNm" HorizontalAlignment="Center" Height="23" Margin="0,75,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="TxtPswd" HorizontalAlignment="Center" Height="23" Margin="0,108,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="TxtPswdRpt" HorizontalAlignment="Center" Height="23" Margin="0,141,0,0" TextWrapping="Wrap" Text="Repeat password" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="TxtEml" HorizontalAlignment="Center" Height="23" Margin="0,174,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>
