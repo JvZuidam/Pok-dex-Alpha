@@ -21,7 +21,7 @@ namespace Pokèdex_Alpha.Classes
             {
                 // Create the connectionString
                 // Trusted_Connection is used to denote the connection uses Windows Authentication
-                conn.ConnectionString = "Server=u754486136_users;Database=u754486136_users;Trusted_Connection=true";
+                conn.ConnectionString = "Server=mysql.master_domain.com;Database=u754486136_users;User ID=u754486136_admin;Password=BM3990hhLT;";
                 conn.Open();
 
                 // Create the command, to insert the data into the Table!
