@@ -27,7 +27,6 @@ namespace Pokèdex_Alpha
         {
             InitializeComponent();
         }
-        
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
@@ -37,6 +36,10 @@ namespace Pokèdex_Alpha
             var password = TxtPswd.Password;
             var passwordRepeat = TxtPswdRpt.Password;
             var email = TxtEml.Text;
+
+            //create a new instance of the SendData class
+            SendData regitems = new SendData { RegName = name, RegUsername = username, RegPass = password, RegPassRpt = passwordRepeat, RegEmail = email};
+
 
             //Run a bunch of if statements to find out if the user has not filled out one or more of the forms.
             //Return a messagebox telling the user which form(s) they still have to fill in.
@@ -94,9 +97,10 @@ namespace Pokèdex_Alpha
                 //Hash and salt the entered password.
                 var Hash = Hashing.CreateHash(password);
                 Console.WriteLine(Hash);
+                regitems.RegHash = Hash;
             }
             Console.WriteLine("Succesful");
-            DbConnect.Connect();
+            regitems.SendRegister();
         }
     }
 }

@@ -73,6 +73,7 @@
     <Compile Include="Classes\DbConnect.cs" />
     <Compile Include="Classes\EmailValidation.cs" />
     <Compile Include="Classes\Hashing.cs" />
+    <Compile Include="Classes\SendData.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>

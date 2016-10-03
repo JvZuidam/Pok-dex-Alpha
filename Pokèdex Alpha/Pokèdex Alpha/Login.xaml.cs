@@ -31,5 +31,14 @@ namespace Pokèdex_Alpha
             win1.Show();
             this.Close();
         }
+
+        private void BtnLog_Click(object sender, RoutedEventArgs e)
+        {
+            var name = TxtUsrLog.Text;
+            var password = TxtPswdLog.Text;
+
+            //create a new instance of the SendData class
+            SendData logitems = new SendData {LogName = name, LogPass = password};
+        }
     }
 }

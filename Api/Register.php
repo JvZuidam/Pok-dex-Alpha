@@ -1,9 +1,11 @@
 <?php 
+var_dump($_POST);
+exit;
 // connect to the mysql database
-$link = mysqli_connect('localhost', 'u754486136_admin', 'BM3990hhLT', 'u754486136_users');
+$link = mysqli_connect('mysql.hostinger.nl', 'u754486136_admin', 'BM3990hhLT', 'u754486136_users');
 mysqli_set_charset($link,'utf8');
 
-$sql = "insert into `$table` set $set";
+$sql = "INSERT INTO Users set $set";
 
 // excecute SQL statement
 $result = mysqli_query($link,$sql);
@@ -12,5 +14,5 @@ $result = mysqli_query($link,$sql);
 if (!$result) {
   http_response_code(404);
   die(mysqli_error());
-
+}
 ?> 
