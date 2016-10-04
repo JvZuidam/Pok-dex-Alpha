@@ -34,8 +34,8 @@ namespace Pokèdex_Alpha.Classes
                 //Add the register form items to it
                 _regdata.Add("name", RegName);
                 _regdata.Add("username", RegUsername);
+                _regdata.Add("password", RegHash);
                 _regdata.Add("email", RegEmail);
-                _regdata.Add("Hash", RegHash);
              
 
                 var content = new FormUrlEncodedContent(_regdata);
